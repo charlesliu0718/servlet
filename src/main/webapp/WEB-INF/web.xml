@@ -11,4 +11,32 @@
     <welcome-file>homepage.html</welcome-file>
   </welcome-file-list>
 
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.chao.servlet.servlet.MyServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MyHttpServlet</servlet-name>
+    <servlet-class>com.chao.servlet.servlet.MyHttpServlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>LiuChao</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MyHttpServlet</servlet-name>
+    <url-pattern>/MyHttpServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyHttpServlet</servlet-name>
+    <url-pattern>/MyHttpServlet2</url-pattern>
+  </servlet-mapping>
 </web-app>
