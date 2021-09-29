@@ -39,4 +39,14 @@
     <servlet-name>MyHttpServlet</servlet-name>
     <url-pattern>/MyHttpServlet2</url-pattern>
   </servlet-mapping>
+
+  <!--过滤器配置 过滤器在启动时就被初始化-->
+  <filter>
+    <filter-name>PreFilter</filter-name>
+    <filter-class>com.chao.servlet.filter.PreFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PreFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
